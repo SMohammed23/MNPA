@@ -117,7 +117,8 @@ Gain_Arry = zeros(100,1);
 
 for iter = 1:1000
     
-    C_Gen = C_1 + 0.5*randn();
+    std = 0.5;
+    C_Gen = C_1 + std*randn();
     
     C(2, 1) = C_Gen; 
     
